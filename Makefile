@@ -66,3 +66,6 @@ publish: test
 
 node:
 	cd src/javascript; node-gyp configure && node-gyp build && node example.js
+
+php:
+	cd src/php; cc main.cpp -L../../build/dice -I../grammar/
