@@ -3,7 +3,7 @@
         {
             "target_name": "dicetower",
             "sources": [
-                "node_addon.cpp"
+                "node_addon.cc"
             ],
             "libraries": [
                 "-Lc_build/dice.so"

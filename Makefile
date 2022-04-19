@@ -64,10 +64,5 @@ publish: test
 	#twine upload --repository-url https://test.pypi.org/legacy/ src/python/dist/*
 	twine upload src/python/dist/*
 
-js:
-	cd src/javascript; npm install;
-
-swig: all
-	swig -javascript -node -c++ src/swig/dicetower.i
-	# This produces dicetower_wrap.cxx
-	cd src/javascript; node-gyp configure ; node-gyp build
+node:
+	cd src/javascript; node-gyp configure && node-gyp build && node example.js
