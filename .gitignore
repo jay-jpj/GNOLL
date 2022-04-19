@@ -127,6 +127,9 @@ __pycache__/
 .pytest_cache/
 *.output
 
+# Swig
+*_wrap.c
+
 # Packaging Artifacts
 src/LICENSE
 src/Makefile
